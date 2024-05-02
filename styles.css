@@ -21,7 +21,7 @@ header {
 /* Заголовок для возврата на главную страницу */
 #home-link {
     display: flex;
-    align-items: center;
+    align-items: left;
     text-decoration: none;
     color: white;
     font-size: 20px;
