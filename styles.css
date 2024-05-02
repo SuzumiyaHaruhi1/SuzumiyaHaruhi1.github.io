@@ -20,26 +20,39 @@ header {
 
 /* Заголовок для возврата на главную страницу */
 #home-link {
-	font-family: Arial, sans-serif;
     display: flex;
     align-items: center;
     text-decoration: none;
     color: white;
-	justify-content: left;
-	text-align: left;
-	font-size: 18px;
+    font-size: 20px;
+	cursor: default;
 }
 
 #home-link img {
-    margin-right: 500px; /* Space between icon and text */
+    margin-right: 10px; /* Adjust this to control the space */
+    text-decoration: none;
 }
+
+#home-link .text {
+    position: relative;
+    text-decoration: none;
+    top: 2px; /* Moves the text down by 2px */
+}
+
+#home-link .text:hover {
+    text-decoration: underline;
+    color: #A9FFF6;
+    cursor: pointer; /* Changes the cursor to a pointer only on hover over the text */
+}
+
+
 
 header h1 {
     margin-top: 0;
 }
 
 .posts {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .post {
@@ -50,21 +63,81 @@ header h1 {
     background-color: #666;  /* Фон блока */
     box-shadow: 0 6px 5px rgba(0,0,0,0.5);  /* Тень вокруг каждого блока */
 	border: 3px solid #191918; /* Рамки вокруг блока */
-    margin: 20px 0;
+    margin: 20px 100px;
     padding: 20px;
+	color: white;
     text-align: left; /* Выравнивание текста по горизонтали */
-	cursor: pointer;
 }
 
 .post h2 {
     margin-top: 0;
 }
 
+
 .post h2 a {
+	cursor: pointer;
     color: white;
     text-decoration: none;
+}
+
+.post h2 a:hover {
+    text-decoration: underline;
+	color: #A9FFF6;
 }
 
 .post p {
     color: #666;
 }
+
+
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #555; /* Lighter background on hover */
+}
+
+.category {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    color: white;
+}
+
+.category-content {
+    background-color: #444; /* Darker background for file list */
+    border: 1px solid #aaa; /* Slightly lighter border than category */
+    border-radius: 5px; /* Slightly less rounded corners than category */
+    padding: 10px;
+    margin-top: 5px; /* Close proximity to category */
+    display: none; /* Start hidden */
+}
+
+.file-item {
+    padding: 5px; /* Smaller padding for file items */
+    margin: 3px 0; /* Smaller margin for a compact list */
+}
+
+.file-item a {
+    color: #DDDDDD; /* Lighter text color for visibility against the dark background */
+    text-decoration: none; /* No underline */
+}
+
+.file-item a:hover {
+    text-decoration: underline; /* Underline on hover for interactivity */
+}
+
+
+
