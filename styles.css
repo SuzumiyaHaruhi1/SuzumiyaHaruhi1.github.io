@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 20px;
+    padding: 25px;
 }
 
 header {
@@ -16,10 +16,11 @@ header {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin-bottom: 50px;
 }
 
 header h1 {
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 .posts {
@@ -27,25 +28,22 @@ header h1 {
 }
 
 .post {
-    display: flex;
-    /* Динамичный контейнер */
-    flex-direction: column;
-    /* Вертикальное размещение элементов */
-    justify-content: left;
-    /* Горизонтальное размещение элементов */
-    height: 30px;
-    /* Set a specific height for your post container */
-    background-color: #666;
-    /* Фон блока */
-    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.5);
-    /* Тень вокруг каждого блока */
-    border: 3px solid #191918;
-    /* Рамки вокруг блока */
-    margin: 20px 100px;
+    display: flex;  /* Динамичный контейнер */
+    flex-direction: column;  /* Вертикальное размещение элементов */
+    justify-content: left;  /* Горизонтальное размещение элементов */
+    height: 30px;  /* Высота блока */
+    background-color: #666;  /* Фон блока */
+    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.5);  /* Тень вокруг каждого блока */
+    border: 4px solid #191918;  /* Толщина и цвет рамок */
+    border-radius: 20px; /* Скругление рамок вокруг блока */
+    margin: 20px 250px;
     padding: 20px;
     color: white;
-    text-align: left;
-    /* Выравнивание текста по горизонтали */
+    text-align: left;  /* Выравнивание текста по горизонтали */
+}
+
+.post:hover {
+    background-color: #777;
 }
 
 .post h2 {
@@ -60,8 +58,8 @@ header h1 {
 }
 
 .post h2 a:hover {
-    text-decoration: underline;
-    color: #A9FFF6;
+    text-decoration: underline;  /* Подчеркивание при наведении */
+    color: #A9FFF6;  /* Смена цвета текста при наведении */
 }
 
 .post p {
@@ -69,19 +67,14 @@ header h1 {
 }
 
 .home {
-    display: flex;
-    /* Динамичный контейнер */
-    flex-direction: column;
-    /* Вертикальное размещение элементов */
-    justify-content: left;
-    /* Горизонтальное размещение элементов */
-    height: 100px;
-    /* Set a specific height for your post container */
+    display: flex;  /* Динамичный контейнер */
+    flex-direction: column;  /* Вертикальное размещение элементов */
+    justify-content: left;  /* Горизонтальное размещение элементов */
+    height: 100px;  /* Высота блока */
     margin: 0px 0px;
     padding: 0px;
     color: white;
-    text-align: left;
-    /* Выравнивание текста по горизонтали */
+    text-align: left;  /* Выравнивание текста по горизонтали */
 }
 
 .home h2 {
@@ -137,42 +130,29 @@ button:hover {
 .category {
     margin: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
-    /* Light grey border */
     border-radius: 8px;
-    /* Rounded corners */
     color: white;
 }
 
 .category-content {
     background-color: #444;
-    /* Darker background for file list */
     border: 1px solid #aaa;
-    /* Slightly lighter border than category */
     border-radius: 5px;
-    /* Slightly less rounded corners than category */
     padding: 10px;
     margin-top: 5px;
-    /* Close proximity to category */
     display: none;
-    /* Start hidden */
 }
 
 .file-item {
     padding: 5px;
-    /* Smaller padding for file items */
     margin: 3px 0;
-    /* Smaller margin for a compact list */
 }
 
 .file-item a {
     color: #DDDDDD;
-    /* Lighter text color for visibility against the dark background */
-    text-decoration: none;
-    /* No underline */
+    text-decoration: none;  /* Убрать подчеркивания */
 }
 
 .file-item a:hover {
-    text-decoration: underline;
-    /* Underline on hover for interactivity */
+    text-decoration: underline;  /* Подчеркивание при наведении */
 }
